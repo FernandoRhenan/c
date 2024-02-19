@@ -49,5 +49,21 @@ int main()
     printf("Pegando os valores de pHora, pMinuto e pSegundo que esta no endereco de hora1, minuto1 e segundo1\n");
     printf("%i:%i:%i", *tempo1_msp.pHora, *tempo1_msp.pMinuto, *tempo1_msp.pSegundo);
 
-    return 0;
+    // v_num é a variável que
+    // será apontada pelo ponteiro
+    int v_num = 10;
+
+    // declaração de variável ponteiro
+    int *ptr;
+
+    // atribuindo o endereço da variável v_num ao ponteiro
+    ptr = &v_num;
+
+    printf("Utilizando ponteiros\n\n");
+    printf("Conteudo da variavel v_num: %d\n", v_num);
+    printf("Conteudo da variavel v_num atraves do ponteiro ptr: %d\n", *ptr);
+    printf("Endereco da variavel v_num: %x \n", &v_num);
+    printf("Conteudo da variavel ponteiro ptr: %x", ptr);
+
+    return (0);
 }
